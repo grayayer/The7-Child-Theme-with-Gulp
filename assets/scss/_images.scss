@@ -1,0 +1,16 @@
+
+.icon-box img, img.purple-to-blue, .wpb_content_element.purple-to-blue img {
+    filter: hue-rotate(267deg) saturate(130%) brightness(104%);
+}
+
+
+/* makes the team images non-floated and centered on mobile */
+@media screen and (max-width:768px) {
+	.single-dt_team img.alignleft {
+    CLEAR: BOTH;
+    FLOAT: none;
+    padding-bottom: 20px;
+    margin: 0 auto 30px;
+    display: block;
+	}
+}

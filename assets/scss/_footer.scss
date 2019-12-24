@@ -1,0 +1,121 @@
+#footer {
+	font-family: $body_font;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+
+	.socialmedia-buttons{
+    	margin-bottom: 1em;
+		display: table;
+	    text-align: center;
+		a {
+		    text-decoration: none;
+		    text-align: center;
+		    padding: 10px;
+			-webkit-transition: all .1s ease-in-out;
+			-moz-transition: all .1s ease-in-out;
+			-ms-transition: all .1s ease-in-out;
+			-o-transition: all .1s ease-in-out;
+	  		transition: all .1s ease-in-out;
+/*		    &:hover {
+		    	color: $anchor;
+		    }*/
+		    &:first-of-type {
+		    	padding-left: 0;
+		    }
+		}
+	}
+	.gform_wrapper {
+		margin: -2px 0 15px;
+		li.hidden_label input {
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+	}
+	&.footer .widget {
+		color: #fff;
+	}
+	a.button {
+	    font-size: .8em;
+	    display: block;
+		text-align: center;
+
+		i {
+			padding-right: 8px;
+		}
+	}
+}
+
+.footer_location_item {
+	margin-left: 20px;
+}
+
+.footer_icon_address:before, .footer_icon_phone:before {
+    font-family: icomoon-the7-font !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: inherit;
+    margin-left: -15px;
+    position: relative;
+    right: 5px;
+}
+
+.footer_icon_address:before {
+    content: "\e402";
+}
+
+
+.footer_icon_phone:before {
+    content: "\e105";
+}
+
+
+/* adjusts the sizing of the email address field for the footer newsletter sign up*/
+@media only screen and (min-width: 641px) {
+	#footer .gform_wrapper form.gf_simple_horizontal div.gform_body ul.top_label li.gfield:nth-child(1):nth-last-child(2), .gform_wrapper form.gf_simple_horizontal div.gform_body ul.top_label li.gfield:nth-child(2):nth-last-child(1) {
+		width: 100%;
+	}
+}
+
+
+/* fix for the footer buttons on tablets */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+	#footer {
+		a.button {
+		    padding: 12px 14px;
+		    white-space: normal;
+		    i {
+		    	display: none;
+		    }
+		}
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+	#footer {
+		a.button {
+		    padding: 12px 14px;
+		}
+
+		.fa-3x {
+    		font-size: 1.75em;
+		}
+		.socialmedia-buttons a {
+    		padding: 10px 5px;
+    	}
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+	#footer {
+		.fa-3x {
+    		font-size: 2.25em;
+		}
+		.socialmedia-buttons a {
+    		padding: 10px 7px;
+    	}
+	}
+}
+

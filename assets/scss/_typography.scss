@@ -1,0 +1,106 @@
+/** TYPOGRAPHY **/
+
+a {
+	transition: 200ms all ease-in-out;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+/*text-decoration: underline;*/
+	color: $anchor;
+}
+
+.white_text {
+	h1, h2, h3, h4, h5, p {
+		color: white;
+		a {
+			color: white;
+		}
+	}
+	a & {
+		color: white;
+	}
+}
+
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.widget_categories li a, .widget_meta a, .blogroll a, .widget_archive li a, .widget_recent_entries a, .widget_recent_comments a, .widget_links a, .items-grid a, .recent-posts a, .widget:not(.widget_icl_lang_sel_widget) .recent-posts a, .contact-info .secondary-color, .widget_nav_menu a, .tagcloud a, .widget_pages a, a.rsswidget, .textwidget a,
+a span.post-title.h4-size /* the related posts links */,
+.sidebar-content .widget_categories li a:hover /*the sidebar category list*/{
+	color: $anchor;
+	transition: 200ms all ease-in-out;
+}
+
+
+#page .post-navigation .nav-links a .post-title,
+#page .items-grid .post-content a,
+#page .post-content a  {
+	transition: 200ms all ease-in-out;
+}
+
+#page .post-navigation .nav-links a .post-title:hover,
+#page .items-grid .post-content a:hover,
+#page .post-content a:hover {
+    color: $anchor;
+}
+
+/* FAQ PAGE */
+
+.vc_toggle_title>h4 {
+    color: #3F4749;
+    font-weight: bold;
+}
+
+/* homepage hero title */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+	.rev_slider h1.tp-caption {
+	    font-size: 40px !important;
+	    line-height: 50px !important;
+	    margin-top: 17px !important;
+	}
+}
+
+
+/* resets the homepage icon boxes to what the h3 is supposed to be set at */
+.aio-icon-header h3.aio-icon-title {
+    font: normal 24px / 34px $body_font, Helvetica, Arial, Verdana, sans-serif;
+}
+
+
+
+/* creates some space on the team pages before a new header */
+.content p +, .content h2 +, .content h3 +{
+	h2, h3 {
+		margin-top: 1em;
+	}
+}
+
+.content .vc_cta3-container {
+	h2, h3 {
+		margin-top: 0;
+	}
+}
+
+
+
+/* make the text smaller on the blog pages */
+.blog-shortcode.mode-list article .entry-excerpt {
+	font-size: 15px;
+    line-height: 27px;
+}
+
+.blog-shortcode article .entry-meta {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/** Mission Statement on top of pages **/
+
+.mission_statement {
+	color: #42464d;
+    background: #f9f8f6;
+    border: 1px solid #f3f0ed;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.1em;
+}

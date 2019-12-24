@@ -1,0 +1,61 @@
+
+aside.sidebar .icon-box a img {
+    display: block;
+    margin: 25px auto;
+}
+
+/* when the sidebar is blue, give it a slight border that's slightly darker */
+.solid-bg .sidebar-content {
+    /*border: solid 1px #dff5f6;*/
+	box-shadow: inset 0px 0px 0px 1px #dff5f6;
+}
+
+
+/* odd icons on the occasional sidebar images */
+div.icon-box:before {
+	content: none;
+}
+
+.ultimate-map-wrapper.ult-adjust-bottom-margin {
+    margin-bottom: 0;
+}
+
+/** Services Icon List **/
+
+
+
+.treatment_areas_column {
+
+	h5 {
+		color: $blue_link_color;
+	}
+	/* apply this class so the element is styled accordingly */
+	.sidebar_icon_link.aio-icon-component {
+	    margin-bottom: 3em;/* element sizing and spacing */
+
+	    a.aio-icon-box-link {
+	    	transition: 300ms all ease-in-out;
+
+			.top-icon .aio-icon-header h3.aio-icon-title.ult-responsive {
+			    margin-top: 5px;
+			    color: darken($blue_link_color, 5%);
+			}
+
+			/* size of the icons */
+			.aio-icon{
+			    font-size: 5em;
+			}
+			&:hover {
+				color: $anchor_hover_bright;
+				.top-icon .aio-icon-header h3.aio-icon-title.ult-responsive {
+				    color: darken($anchor_hover_bright, 5%);
+				}				
+			}	    	
+	    }
+	}
+}
+
+
+
+
+
